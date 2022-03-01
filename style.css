@@ -8,6 +8,20 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+/* Theme colors */
+:root {
+    --very-dark-color: rgb(23 35 57);
+    --dark-color: rgb(73 86 109);
+    --neutral-color: rgb(243 237 231);
+    --accent-color: rgb(250 248 246);
+
+    /* Super-blend */
+    --top-color: rgb(160 96 255);
+    --middle-color: rgb(203 48 227);
+    --bottom-color: rgb(255 168 78);
+}
+
+
 /* --------Header-------- */
 
 
@@ -39,6 +53,7 @@ main {
 .mission-statement {
     font-size: 40px;
     letter-spacing: -0.2px;
+    color: var(--very-dark-color);
 }
 
 bold {
@@ -64,10 +79,17 @@ span {
     line-height: 35px;
     margin: 2rem auto;
     font-weight: 300;
-    color: rgb(73 86 109);
+    color: var(--dark-color);
 }
 
+.mission-btn {
+    color: var(--accent-color);
+    background-color: var(--very-dark-color);
+}
 
+.btn:hover {
+    cursor: pointer;
+}
 
 
 /* Hero section */
@@ -75,10 +97,6 @@ span {
     margin: 3rem auto;
 }
 
-.hero-img-container {
-    /* width: 100%; */
-    /* border: 1px solid; */
-}
 
 .hero-img {
     width: 100%;
@@ -105,13 +123,13 @@ span {
 
 .stat-texts {
     text-transform: uppercase;
-    color: rgb(73 86 109);
+    color: var(--dark-color);
     font-weight: 300;
 }
 
 
 
-/* White space */
+/* White space section */
 
 .white-space {
     /* border: 1px solid blue; */
@@ -120,13 +138,13 @@ span {
 
 
 
-/* Testimonial */
+/* Testimonial section */
 
 
 .testimonial {
     position: relative;
     background-color: rgb(23 35 57);
-    color: white;
+    color: var(--accent-color);
     border-radius: 0.5rem;
 }
 
@@ -203,6 +221,8 @@ footer {
     justify-content: space-between;
     padding: 4rem;
     height: 17rem;
+    background-color: var(--neutral-color);
+    color: var(--very-dark-color)
 }
 
 .footer-logo {
@@ -211,6 +231,7 @@ footer {
 
 #copyright {
     text-transform: capitalize;
+    color: var(--dark-color);
 }
 
 .links ul {
