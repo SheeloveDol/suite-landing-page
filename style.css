@@ -12,7 +12,6 @@ body {
 
 
 .container {
-    border: 2px solid red;
     margin: 1rem;
 }
 
@@ -34,7 +33,6 @@ button {
 /* mission */
 
 main {
-    border: 1px dashed green;
     margin-top: 3rem;
 }
 
@@ -197,3 +195,28 @@ img {
 }
 
 /* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    height: 17rem;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+#copyright {
+    text-transform: capitalize;
+}
+
+.links ul {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
