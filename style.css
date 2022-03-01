@@ -51,20 +51,25 @@ bold {
     
     /* border: 1px solid purple; */
     margin-left: 9.5rem ;
-    width: 40vw;
+    width: 150px;
 }
 
 img.curve {
     width: 100%
 }
 
+span {
+    font-weight: 300;
+}
 .quote1 {
     font-size: 20px;
     line-height: 35px;
     margin: 2rem auto;
-    color: rgb(73 86 109);
     font-weight: 300;
+    color: rgb(73 86 109);
 }
+
+
 
 
 /* Hero section */
@@ -106,29 +111,89 @@ img.curve {
     font-weight: 300;
 }
 
+
+
+/* White space */
+
+.white-space {
+    /* border: 1px solid blue; */
+    height: 11rem;
+}
+
+
+
 /* Testimonial */
 
 
-
 .testimonial {
-    border: 1px solid;
-    padding-top: 11rem;
-    /* border: 10px solid purple; */
-    
-    
+    position: relative;
+    background-color: rgb(23 35 57);
+    color: white;
+    border-radius: 0.5rem;
 }
 
-.offset-wrapper {
-    background-color: aqua;
-    border: 5px solid purple;
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remember to refactor */
+img {
+    width: 100%;
 }
 
 .jeremy-img-container {
-    text-align: center;
+    width: 70%;
+    position: absolute;
+    top: -11rem;
+    
 }
 
-.offset {
-    position: relative;
-    top: -11rem;
-    border: 10px solid red;
+.blurred-bg {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
+
+.curved-line-2 {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+.testimonial-title {
+    margin-bottom: 2rem;
+    font-size: 32px;
+    letter-spacing: -0.2px;
+}
+
+
+
+.testimonial-body {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 35px;
+    margin: 2rem auto;
+    font-weight: 300;
+    text-align: center;
+    padding-inline: 1.5rem;
+}
+
+.testimonial-name {
+    margin-bottom: 3rem;
+    text-align: center;
+    line-height: 32px;
+}
+
+.upcase-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.upcase-regular {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Footer */
