@@ -5,7 +5,10 @@
 }
 
 body {
+    /* border: 20px solid red; */
     font-family: 'Rubik', sans-serif;
+    display: grid;
+    place-items: center;
 }
 
 /* Theme colors */
@@ -25,8 +28,10 @@ body {
 /* --------Header-------- */
 
 
+
 .container {
     margin: 1rem;
+    max-width: 400px;
 }
 
 header {
@@ -42,6 +47,8 @@ button {
     background-color: white;
     border-radius: 0.5rem;
 }
+
+
 
 /* --------Main-------- */
 /* mission */
@@ -80,6 +87,7 @@ span {
     margin: 2rem auto;
     font-weight: 300;
     color: var(--dark-color);
+
 }
 
 .mission-btn {
@@ -101,6 +109,11 @@ span {
 .hero-img {
     width: 100%;
     height: auto;
+}
+
+.tablet-hero-img,
+.desktop-hero-img {
+    display: none;
 }
 
 /* Stats section */
@@ -164,7 +177,6 @@ img {
     width: 70%;
     position: absolute;
     top: -11rem;
-    
 }
 
 .blurred-bg {
@@ -241,3 +253,101 @@ footer {
     align-items: center;
     list-style: none;
 }
+
+
+/* -----Tablet media query----- */
+
+
+@media screen and (min-width: 600px) {
+
+    
+    .container {
+        min-width: 600px;
+        margin-bottom: 0;
+    }
+
+    button {
+        padding: 1.2rem 1.8rem;
+    }
+
+    .tablet-config {
+        /* border: 2px solid blue; */
+        display: flex;
+        /* min-width: 600px; */
+        margin: 0 auto;
+        align-items: center;
+        padding: 
+       
+    }
+
+    .mission {
+        height: min-content;
+        position: relative;
+        top: 4rem;
+    }
+
+    .main-header {
+        position: absolute;
+        width: 31rem;
+        top: -8.5rem;
+    }
+    
+    .curved-line {
+        margin-left: 11.5rem;
+        width: 180px;
+    }
+
+    .mission-statement {
+        font-size: 48px;
+    }
+
+    .mobile-hero-img {
+        display: none;
+    }
+
+    .tablet-hero-img {
+        display: block;
+        width: 16rem;
+    }
+
+    .stats {
+        
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .white-space {
+        margin-top: 90px;
+    }
+
+    .jeremy-img-container {
+        width: 54%;
+    }
+    
+
+
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        height: 12rem;
+    }
+
+    .footer-logo {
+        width: 85px;
+    }
+    
+    .background {
+        min-width: 700px;
+        position: absolute;
+        bottom: -445px;
+        top:1380px;
+        z-index: -1;
+        background-color: var(--neutral-color);
+    }
+   
+} 
+
