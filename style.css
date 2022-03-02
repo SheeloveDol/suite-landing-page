@@ -276,7 +276,7 @@ footer {
         /* min-width: 600px; */
         margin: 0 auto;
         align-items: center;
-        padding: 
+        /* padding:  */
        
     }
 
@@ -341,10 +341,11 @@ footer {
     }
     
     .background {
-        min-width: 700px;
+        width: 700px;
         position: absolute;
-        bottom: -445px;
-        top:1380px;
+        height: 800px;
+        /* bottom: 0px; */
+        top:1325px;
         z-index: -1;
         background-color: var(--neutral-color);
     }
